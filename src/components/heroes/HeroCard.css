@@ -6,6 +6,12 @@
   padding:0.1rem;
   
 }
+
+.card-container:hover{
+    opacity:0.7;
+}
+
+
 .card-img {
   width: 100%;
 }
