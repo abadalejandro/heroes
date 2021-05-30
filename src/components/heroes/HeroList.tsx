@@ -10,7 +10,7 @@ export const HeroList = ({ publisher }: IProps) => {
     const heroes = getHeroesByPublisher(publisher);
 
     return (
-        // <div className="card-columns">
+      
         <div className="container">
             {
                 heroes.map(hero => (

@@ -10,7 +10,7 @@ export const HeroCard = ({
     characters,
 }: hero) => {
     return (
-        <div className="card-container" >
+        <div className="card-container animate__animated animate__backInLeft" >
             <Link to={`./hero/${id}`} className="more-info"  >
             <div className="">
                 <img src={`./assets/heroes/${id}.jpg`} className="card-img" alt={superhero} />

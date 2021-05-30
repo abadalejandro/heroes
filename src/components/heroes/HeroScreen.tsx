@@ -7,7 +7,6 @@ export const HeroScreen = () => {
     const hero = getHeroById(heroId);
     if(!hero) return <Redirect to="/" />;
 
-    console.log(hero);
     return (
         <div className="row mt-5">
             <div className="col-4">
