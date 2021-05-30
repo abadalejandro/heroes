@@ -13,15 +13,10 @@ export const HeroCard = ({
         <div className="card-container" >
             <Link to={`./hero/${id}`} className="more-info"  >
             <div className="">
-
-
                 <img src={`./assets/heroes/${id}.jpg`} className="card-img" alt={superhero} />
-
-
                 <p className="card-title">{superhero}</p>
 
                 <div className="card-info">
-
                     <p className="">{alter_ego}</p>
                     {/* {
                             (alter_ego !== characters)

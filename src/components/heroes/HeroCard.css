@@ -1,9 +1,9 @@
 .card-container {
-  background-color: red;
+  /* background-color: red; */
   max-width: 300px;
   height: auto;
   position: relative;
-  
+  padding:0.1rem;
   
 }
 .card-img {
@@ -11,20 +11,17 @@
 }
 .card-title {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 0.1rem;
+  right: 0.1rem;
 
   background-color: rgba(0, 0, 0, 0.4);
-
-  line-height: auto;
+ 
   color: white;
   font-weight: bold;
   padding-left: 1rem;
   padding-right: 1rem;
 
-  font-size: 2rem;
-
-  /* padding: 1rem; */
+  font-size: 2rem;  
 }
 
 .card-info {
@@ -42,9 +39,4 @@
 
   line-height: 1rem;
 
-}
-
-.more-info {
-  text-decoration: none;
-  color: white;
 }
