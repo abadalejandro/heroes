@@ -1,0 +1,50 @@
+.card-container {
+  background-color: red;
+  max-width: 300px;
+  height: auto;
+  position: relative;
+  
+  
+}
+.card-img {
+  width: 100%;
+}
+.card-title {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  background-color: rgba(0, 0, 0, 0.4);
+
+  line-height: auto;
+  color: white;
+  font-weight: bold;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  font-size: 2rem;
+
+  /* padding: 1rem; */
+}
+
+.card-info {
+
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  font-size: 1.3rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 1rem;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  line-height: 1rem;
+
+}
+
+.more-info {
+  text-decoration: none;
+  color: white;
+}

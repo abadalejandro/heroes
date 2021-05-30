@@ -1,6 +1,6 @@
-import { heroe } from '../interfaces/interfaces';
+import { hero } from '../interfaces/interfaces';
 
-export const heroes:heroe[] = [
+export const heroes:hero[] = [
     {
         'id': 'dc-batman',
         'superhero':'Batman', 

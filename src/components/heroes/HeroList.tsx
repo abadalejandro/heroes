@@ -1,5 +1,6 @@
 import { getHeroesByPublisher } from '../../selectors/getHeroesByPublisher';
-
+import { HeroCard } from './HeroCard';
+import './HeroList.css';
 interface IProps {
     publisher: string
 }
@@ -9,17 +10,14 @@ export const HeroList = ({ publisher }: IProps) => {
     const heroes = getHeroesByPublisher(publisher);
 
     return (
-        <ul>
+        // <div className="card-columns">
+        <div className="container">
             {
                 heroes.map(hero => (
-                    <li key={hero.id}>
-                        {
-                            hero.superhero
-                        }
-                    </li>
+                    <HeroCard key={hero.id} {...hero} />                     
                 ))
             }
 
-        </ul>
+        </div>
     )
 }
