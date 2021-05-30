@@ -1,37 +1,26 @@
 .card-container {
-  /* background-color: red; */
   max-width: 300px;
   height: auto;
   position: relative;
-  padding:0.1rem;
-  
+  padding: 0.1rem;
 }
-
-.card-container:hover{
-    opacity:0.7;
-}
-
 
 .card-img {
   width: 100%;
 }
+
+.card-img:hover {
+  opacity: 0.7;
+}
+
 .card-title {
-  position: absolute;
-  top: 0.1rem;
-  right: 0.1rem;
-
-  background-color: rgba(0, 0, 0, 0.4);
- 
-  color: white;
+  font-size: 2rem;
   font-weight: bold;
-  padding-left: 1rem;
-  padding-right: 1rem;
-
-  font-size: 2rem;  
+  padding-bottom: 0.7rem;
 }
 
 .card-info {
-
+  width: 100%;
   background-color: transparent;
   color: white;
   font-weight: bold;
@@ -44,5 +33,11 @@
   left: 0;
 
   line-height: 1rem;
+}
 
+@media screen and (max-width: 770px) {
+  .card-container {
+    color: green;
+    max-width: 100%;
+  }
 }

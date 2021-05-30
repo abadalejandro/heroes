@@ -12,11 +12,12 @@ export const HeroCard = ({
     return (
         <div className="card-container animate__animated animate__backInLeft" >
             <Link to={`./hero/${id}`} className="more-info"  >
-            <div className="">
+
                 <img src={`./assets/heroes/${id}.jpg`} className="card-img" alt={superhero} />
-                <p className="card-title">{superhero}</p>
+                {/* <p className="card-title">{superhero}</p> */}
 
                 <div className="card-info">
+                    <p className="card-title">{superhero}</p>
                     <p className="">{alter_ego}</p>
                     {/* {
                             (alter_ego !== characters)
@@ -25,12 +26,8 @@ export const HeroCard = ({
                     <p className="">
                         <small className="">{first_appearance}</small>
                     </p>
-                    
-
                 </div>
-
-            </div>
-        </Link>
+            </Link>
         </div>
     )
     // return (
