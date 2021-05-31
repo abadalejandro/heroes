@@ -12,14 +12,10 @@ export const SearchScreen = ({ history }: any) => {
     if(!q){
         q = '';
     }
-    console.log({q:q});
     const [formValues, handleInputChange] = useForm({ searchText: q });
-
-  
 
     const heroesFiltered = useMemo(() => getHeroesByName(q), [q]);
     // const heroesFiltered = getHeroesByName(formValues.searchText);
-    console.log({heroesFiltered});
     const handleSearch = (e: React.FormEvent<EventTarget>) => {
         e.preventDefault();
         history.push(`?q=${formValues.searchText}`);
