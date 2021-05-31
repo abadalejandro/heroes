@@ -1,16 +1,20 @@
 import { types } from "../types/types";
 
-// interface state {
-//     name:string,
-//     logged:boolean,
-// }
+export interface IAuth {
+    name:string,
+    logged:boolean,    
+  }
 
-// const initialState:state = {
-//     name: 'Alejandro',
-//     logged: true,
-// }
 
-export const authReducer = (state = {}, action: any) => {
+export interface IAction {
+  type:string,
+  payload:any
+} 
+
+
+
+
+export const authReducer = (state:IAuth, action:IAction) => {
     switch (action.type) {
         case types.login:
             return {
