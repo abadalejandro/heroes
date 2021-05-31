@@ -1,3 +1,4 @@
+import { useMemo } from 'react';
 import { getHeroesByPublisher } from '../../selectors/getHeroesByPublisher';
 import { HeroCard } from './HeroCard';
 import './HeroList.css';
@@ -7,14 +8,19 @@ interface IProps {
 
 
 export const HeroList = ({ publisher }: IProps) => {
-    const heroes = getHeroesByPublisher(publisher);
+    const heroes = useMemo(
+        () => getHeroesByPublisher(publisher),
+        [publisher]
+    );
+
+    // const heroes = getHeroesByPublisher(publisher);
 
     return (
-      
+
         <div className="container">
             {
                 heroes.map(hero => (
-                    <HeroCard key={hero.id} {...hero} />                     
+                    <HeroCard key={hero.id} {...hero} />
                 ))
             }
 
