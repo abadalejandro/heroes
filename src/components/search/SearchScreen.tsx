@@ -1,17 +1,29 @@
-import { HeroCard } from '../heroes/HeroCard';
-import { heroes } from '../../data/heroes';
+import React from 'react';
 import { useForm } from '../../hooks/useForm';
+import { useLocation } from 'react-router-dom';
+import { HeroCard } from '../heroes/HeroCard';
+import { getHeroesByName } from '../../selectors/getHeroesByName';
+import { useMemo } from 'react';
 
-export const SearchScreen = () => {
-    const [formValues, handleInputChange] = useForm({searchText:''});
+export const SearchScreen = ({ history }: any) => {
+    const location = useLocation();
 
-    const {searchText} = formValues;
+    let q = new URLSearchParams(location.search).get('q');
+    if(!q){
+        q = '';
+    }
+    console.log({q:q});
+    const [formValues, handleInputChange] = useForm({ searchText: q });
+
   
-    const heroesFiltered = heroes;
 
+    const heroesFiltered = useMemo(() => getHeroesByName(q), [q]);
+    // const heroesFiltered = getHeroesByName(formValues.searchText);
+    console.log({heroesFiltered});
     const handleSearch = (e: React.FormEvent<EventTarget>) => {
         e.preventDefault();
-        console.log(searchText);
+        history.push(`?q=${formValues.searchText}`);
+
     }
 
     return (
@@ -25,21 +37,27 @@ export const SearchScreen = () => {
                     <form onSubmit={handleSearch}>
                         <input type="text"
                             placeholder="Find your hero."
-                            className="form-control"
+                            className="form-control mb-2"
                             name="searchText"
-                            value={searchText}
+                            value={formValues.searchText}
                             onChange={handleInputChange}
+                            
                         />
 
                         <button type="submit"
-                            className="btn m-1 btn-block btn-outline-primary">
+                            className="btn  btn-block btn-outline-primary">
                             Search...
                         </button>
                     </form>
                 </div>
                 <div className="col-7">
-                    <h4>Results</h4>
+                    <h4>Results: {heroesFiltered.length}</h4>
                     <hr />
+                    {
+                    (heroesFiltered.length  === 0) && <div className="alert alert-danger">
+                        Hero does not found.
+                    </div>
+                    }
                     {
                         heroesFiltered.map(hero => (
                             <HeroCard key={hero.id} {...hero} />
