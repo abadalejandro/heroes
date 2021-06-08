@@ -6,13 +6,9 @@ import { AuthContext } from '../../auth/AuthContext';
 export const Navbar = () => {
     const { user, dispatch } = useContext<any>(AuthContext);
     const history = useHistory();
-
-    console.log(history);
-
     const handleLogout = () => {
         history.replace('/login');
-        dispatch({ type: 'logout' });
-        
+        dispatch({ type: 'logout' });        
     }
 
     return (
