@@ -17,8 +17,9 @@ export const HeroScreen = ({ history }: any) => {
     const handleReturn = () => {
         if (history.length <= 2) {
             history.push('/');
+        } else {
+            history.goBack();
         }
-        history.goBack();
     }
 
     return (
@@ -31,7 +32,7 @@ export const HeroScreen = ({ history }: any) => {
                 <ul className="list-group list-group-flush">
                     <li className="list-group-item" ><b>Alter ego: </b>{hero.alter_ego}</li>
                     <li className="list-group-item" ><b>Publisher: </b>{hero.publisher}</li>
-                     <li className="list-group-item" ><b>First appearance: </b>{hero.first_appearance}</li>
+                    <li className="list-group-item" ><b>First appearance: </b>{hero.first_appearance}</li>
                 </ul>
                 &nbsp;
                 <h5>Characters</h5>
