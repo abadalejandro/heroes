@@ -4,9 +4,11 @@ import { AuthContext } from '../../auth/AuthContext';
 export const LoginScreen = ({ history }: any) => {
     const {dispatch}  = useContext<any>(AuthContext);
    
-    const handleLogin = (_e: React.FormEvent<EventTarget>) => {
+    const handleLogin = (_e: React.FormEvent<EventTarget>) => {        
+        const lastPath = localStorage.getItem('lastPath') || '/';
+        
         dispatch({ type: 'login', payload: { name: 'ale' } });
-        history.replace('/');
+        history.replace(lastPath);
     }
 
     return (
