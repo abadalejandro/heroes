@@ -14,7 +14,7 @@ type LoginPayload = {
 
 export type AuthAction =
     | { type: 'login', payload: LoginPayload }
-    | { type: 'logout' };
+    | { type: 'logout' }
 
 
 
@@ -29,6 +29,7 @@ export const authReducer = (state: IAuthState = initialState, action: AuthAction
         case 'logout':
             return {
                 ...state,
+                name: null,
                 logged: false
             }
 

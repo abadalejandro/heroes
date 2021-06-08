@@ -1,15 +1,25 @@
-import { Link, NavLink } from 'react-router-dom';
-import {useContext} from 'react';
+import { Link, NavLink, useHistory } from 'react-router-dom';
+import { useContext } from 'react';
 import { AuthContext } from '../../auth/AuthContext';
 
 
 export const Navbar = () => {
-    const {user} = useContext<any>(AuthContext);
+    const { user, dispatch } = useContext<any>(AuthContext);
+    const history = useHistory();
+
+    console.log(history);
+
+    const handleLogout = () => {
+        history.replace('/login');
+        dispatch({ type: 'logout' });
+        
+    }
+
     return (
         <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
-            
-            <Link 
-                className="navbar-brand" 
+
+            <Link
+                className="navbar-brand"
                 to="/"
             >
                 Asociaciones
@@ -18,26 +28,26 @@ export const Navbar = () => {
             <div className="navbar-collapse">
                 <div className="navbar-nav">
 
-                    <NavLink 
+                    <NavLink
                         activeClassName="active"
-                        className="nav-item nav-link" 
+                        className="nav-item nav-link"
                         exact
                         to="/marvel"
                     >
                         Marvel
                     </NavLink>
 
-                    <NavLink 
+                    <NavLink
                         activeClassName="active"
-                        className="nav-item nav-link" 
+                        className="nav-item nav-link"
                         exact
                         to="/dc"
                     >
                         DC
                     </NavLink>
-                    <NavLink 
+                    <NavLink
                         activeClassName="active"
-                        className="nav-item nav-link" 
+                        className="nav-item nav-link"
                         exact
                         to="/search"
                     >
@@ -51,14 +61,12 @@ export const Navbar = () => {
                     <span className="nav-item nav-link text-info">
                         {user.name}
                     </span>
-                    <NavLink 
-                        activeClassName="active"
-                        className="nav-item nav-link" 
-                        exact
-                        to="/login"
+                    <button
+                        className="nav-item nav-link btn"
+                        onClick={handleLogout}
                     >
                         Logout
-                    </NavLink>
+                    </button>
                 </ul>
             </div>
         </nav>
