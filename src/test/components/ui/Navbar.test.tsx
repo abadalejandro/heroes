@@ -1,8 +1,8 @@
 import { MemoryRouter, Router } from 'react-router-dom';
 import { mount } from "enzyme";
 import '@testing-library/jest-dom';
-import { AuthContext } from '../../auth/AuthContext';
-import { Navbar } from '../../components/ui/Navbar';
+import { AuthContext } from '../../../auth/AuthContext';
+import { Navbar } from '../../../components/ui/Navbar';
 
 describe('Test in <Navbar />.', () => {
     const historyMock = {
