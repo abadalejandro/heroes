@@ -45,6 +45,4 @@ describe('Test in <Navbar />.', () => {
     });
 
 
-
-
 });
