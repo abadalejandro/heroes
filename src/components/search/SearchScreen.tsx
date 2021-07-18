@@ -24,7 +24,7 @@ export const SearchScreen = ({ history }: any) => {
 
     return (
         <div>
-            <h1>Search Screen</h1>
+            <h1>Search</h1>
             <hr />
             <div className="row">
                 <div className="col-5">

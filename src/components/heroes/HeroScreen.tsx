@@ -11,7 +11,6 @@ export const HeroScreen = ({ history }: any) => {
         [heroId]
     );
 
-    // const hero: hero | undefined = getHeroById(heroId);
     if (!hero) return <Redirect to="/" />;
 
     const handleReturn = () => {

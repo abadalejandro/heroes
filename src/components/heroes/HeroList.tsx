@@ -13,7 +13,6 @@ export const HeroList = ({ publisher }: IProps) => {
         [publisher]
     );
 
-    // const heroes = getHeroesByPublisher(publisher);
 
     return (
 

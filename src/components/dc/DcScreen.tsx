@@ -5,7 +5,7 @@ export const DcScreen = () => {
 
     return (
         <div>
-            <h1 className="animate__animated animate__backInRight">DC screen</h1>
+            <h1 className="animate__animated animate__backInRight">DC</h1>
             <hr />
             <HeroList publisher={DC_COMICS} />
         </div>        
