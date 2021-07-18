@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/heroes/static/css/main.24ae9449.chunk.css",
+    "main.js": "/heroes/static/js/main.d03610bf.chunk.js",
+    "main.js.map": "/heroes/static/js/main.d03610bf.chunk.js.map",
+    "runtime-main.js": "/heroes/static/js/runtime-main.5b04eb3c.js",
+    "runtime-main.js.map": "/heroes/static/js/runtime-main.5b04eb3c.js.map",
+    "static/js/2.12aa67c9.chunk.js": "/heroes/static/js/2.12aa67c9.chunk.js",
+    "static/js/2.12aa67c9.chunk.js.map": "/heroes/static/js/2.12aa67c9.chunk.js.map",
+    "index.html": "/heroes/index.html",
+    "static/css/main.24ae9449.chunk.css.map": "/heroes/static/css/main.24ae9449.chunk.css.map",
+    "static/js/2.12aa67c9.chunk.js.LICENSE.txt": "/heroes/static/js/2.12aa67c9.chunk.js.LICENSE.txt",
+    "static/media/dc-arrow.jpg": "/heroes/static/media/dc-arrow.15b27bc2.jpg",
+    "static/media/dc-batman.jpg": "/heroes/static/media/dc-batman.ab9eadc3.jpg",
+    "static/media/dc-black.jpg": "/heroes/static/media/dc-black.3747c663.jpg",
+    "static/media/dc-blue.jpg": "/heroes/static/media/dc-blue.cc8169a3.jpg",
+    "static/media/dc-flash.jpg": "/heroes/static/media/dc-flash.b3922f25.jpg",
+    "static/media/dc-green.jpg": "/heroes/static/media/dc-green.01c54ee1.jpg",
+    "static/media/dc-martian.jpg": "/heroes/static/media/dc-martian.78565f7d.jpg",
+    "static/media/dc-robin.jpg": "/heroes/static/media/dc-robin.ea4afe99.jpg",
+    "static/media/dc-superman.jpg": "/heroes/static/media/dc-superman.e9391474.jpg",
+    "static/media/dc-wonder.jpg": "/heroes/static/media/dc-wonder.970ba2d6.jpg",
+    "static/media/marvel-captain.jpg": "/heroes/static/media/marvel-captain.d2c7774d.jpg",
+    "static/media/marvel-cyclops.jpg": "/heroes/static/media/marvel-cyclops.f1442408.jpg",
+    "static/media/marvel-daredevil.jpg": "/heroes/static/media/marvel-daredevil.2f4f1a57.jpg",
+    "static/media/marvel-hawkeye.jpg": "/heroes/static/media/marvel-hawkeye.1f78e874.jpg",
+    "static/media/marvel-hulk.jpg": "/heroes/static/media/marvel-hulk.d1af5fe5.jpg",
+    "static/media/marvel-iron.jpg": "/heroes/static/media/marvel-iron.b394df11.jpg",
+    "static/media/marvel-silver.jpg": "/heroes/static/media/marvel-silver.1d43a08b.jpg",
+    "static/media/marvel-spider.jpg": "/heroes/static/media/marvel-spider.054016b4.jpg",
+    "static/media/marvel-thor.jpg": "/heroes/static/media/marvel-thor.c63e651c.jpg",
+    "static/media/marvel-wolverine.jpg": "/heroes/static/media/marvel-wolverine.ee676488.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5b04eb3c.js",
+    "static/js/2.12aa67c9.chunk.js",
+    "static/css/main.24ae9449.chunk.css",
+    "static/js/main.d03610bf.chunk.js"
+  ]
+}
