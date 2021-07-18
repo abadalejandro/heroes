@@ -4,9 +4,9 @@ import { HeroesApp } from './HeroesApp';
 
 
 ReactDOM.render(
-  <React.StrictMode>
-    <HeroesApp />
-  </React.StrictMode>,
+  // <React.StrictMode>
+    <HeroesApp />,
+  // </React.StrictMode>,
   document.getElementById('root')
 );
 

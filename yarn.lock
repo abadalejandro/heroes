@@ -1934,6 +1934,11 @@
   dependencies:
     "source-map" "^0.6.1"
 
+"@types/webpack-env@^1.16.2":
+  "integrity" "sha512-vKx7WNQNZDyJveYcHAm9ZxhqSGLYwoyLhrHjLBOkw3a7cT76sTdjgtwyijhk1MaHyRIuSztcVwrUOO/NEu68Dw=="
+  "resolved" "https://registry.npmjs.org/@types/webpack-env/-/webpack-env-1.16.2.tgz"
+  "version" "1.16.2"
+
 "@types/webpack-sources@*":
   "integrity" "sha512-LXn/oYIpBeucgP1EIJbKQ2/4ZmpvRl+dlrFdX7+94SKRUV3Evy3FsfMZY318vGhkWUS5MPhtOM3w1/hCOAOXcg=="
   "resolved" "https://registry.npmjs.org/@types/webpack-sources/-/webpack-sources-2.1.0.tgz"
