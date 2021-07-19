@@ -23,12 +23,10 @@ export const SearchScreen = ({ history }: any) => {
     }
 
     return (
-        <div>
-            <h1>Search</h1>
-            <hr />
+        <div className="container-fluid">         
             <div className="row">
-                <div className="col-5">
-                    <h4>Search Form</h4>
+                <div className="col-12 col-sm-5">
+                    <h3>Search Form</h3>
                     <hr />
                     <form onSubmit={handleSearch}>
                         <input type="text"
@@ -46,7 +44,7 @@ export const SearchScreen = ({ history }: any) => {
                         </button>
                     </form>
                 </div>
-                <div className="col-7">
+                <div className="col-12 col-sm-7">
                     <h4>Results: {heroesFiltered.length}</h4>
                     <hr />
                     {
