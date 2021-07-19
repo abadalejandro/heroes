@@ -8,7 +8,7 @@ export const Navbar = () => {
     const history = useHistory();
     const handleLogout = () => {
         history.replace('/login');
-        dispatch({ type: 'logout' });        
+        dispatch({ type: 'logout' });
     }
 
     return (
@@ -21,8 +21,12 @@ export const Navbar = () => {
                 Heroes
             </Link>
 
-            <div className="navbar-collapse">
-                <div className="navbar-nav">
+            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span className="navbar-toggler-icon"></span>
+            </button>
+
+            <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                <div className="navbar-nav mr-auto">
 
                     <NavLink
                         activeClassName="active"
@@ -50,9 +54,7 @@ export const Navbar = () => {
                         Search
                     </NavLink>
                 </div>
-            </div>
 
-            <div className="navbar-collapse collapse w-100 order-3 dual-collapse2">
                 <ul className="navbar-nav ml-auto">
                     <span id="userName" className="nav-item nav-link text-info">
                         {user.name}
@@ -65,6 +67,7 @@ export const Navbar = () => {
                     </button>
                 </ul>
             </div>
+
         </nav>
     )
 }
