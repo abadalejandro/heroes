@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { HashRouter ,BrowserRouter as Router, Switch } from "react-router-dom";
+import { HashRouter , Switch } from "react-router-dom";
 import { LoginScreen } from "../components/login/LoginScreen";
 import { DashboardRoutes } from "../routers/DashboardRoutes";
 import { PrivateRoute } from './PrivateRoute';
