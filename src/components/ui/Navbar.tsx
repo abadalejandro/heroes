@@ -15,10 +15,10 @@ export const Navbar = () => {
         <nav className="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
 
             <Link
-                className="navbar-brand"
+                className="navbar-brand text-warning"
                 to="/"
             >
-                Heroes
+                HEROES
             </Link>
 
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
